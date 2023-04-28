@@ -1,0 +1,113 @@
+const { Browser } = require('selenium-webdriver');
+const Page = require('./page.js');
+
+class CalculatorPage extends Page {
+
+    get cookie() {return $('devsite-snackbar[type="cookie-notification"] button') };
+    get closeButton() {return $('cloudx-chat').shadow$('span[class="close"]')};
+   
+    get firstFrame()  { return 'iframe[name^="goog_"]' };
+    get secondFrame() { return '#myFrame' };
+    get chatBotFrame() { return 'cloudx-chat' };
+    
+    get instances() { return $('[id^="input_"][ng-model="listingCtrl.computeServer.quantity"]') };
+    
+    get operatingSystem() { return $('md-select[ng-model="listingCtrl.computeServer.os"]') };
+    get operatingSystemFree() { return $('md-option[value="free"]') };
+    
+    get provisioningModel() {return $('md-select[ng-model="listingCtrl.computeServer.class"]') };
+    get provisioningModelRegular() {return $(`md-option[value="regular"]`) };
+    
+    get series() {return $('md-select[ng-model="listingCtrl.computeServer.series"]') };
+    get seriesN1() {return $('md-option[value="n1"]') };
+    get machineType() {return $('md-select[ng-model="listingCtrl.computeServer.instance"]') };
+    get machineTypeN1St8() {return $(`md-option[value="CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8"]`) };
+
+    get addGPU() {return $('(//md-checkbox[@aria-label="Add GPUs"]/div[@class="md-container md-ink-ripple"])[1]') };
+    get GPUType() {return $('md-select[ng-model="listingCtrl.computeServer.gpuType"]') };
+    get GPUTypeV100() {return $('md-option[value="NVIDIA_TESLA_V100"]') };
+    get numberOfGPUs() {return $('md-select[ng-model="listingCtrl.computeServer.gpuCount"]') };
+    get numberOfGPUs1() {return $('md-option[value="1"][ng-repeat="item in listingCtrl.supportedGpuNumbers[listingCtrl.computeServer.gpuType]"]') };
+    
+    get localSSDField() {return $('md-select[ng-model="listingCtrl.computeServer.ssd"]') };
+    get localSSD2gb() {return $('md-option[value="2"][ng-repeat="item in listingCtrl.dynamicSsd.computeServer"]') };
+
+    get datacenter() {return $('md-select[ng-model="listingCtrl.computeServer.location"]') };
+    get frankfurt() {return $('md-option[value="europe-west3"][ng-repeat="item in listingCtrl.fullRegionList | filter:listingCtrl.inputRegionText.computeServer"]') };
+
+    get committedUsageField() {return $('md-select[ng-model="listingCtrl.computeServer.cud"]') };
+    get committedUsage1year() {return $('md-option[value="1"][id="select_option_133"]') };
+
+    get estimateBtn() {return $('button[ng-click="listingCtrl.addComputeServer(ComputeEngineForm);"]') };
+
+    async cookieAgree () {
+        await this.cookie.waitForExist();
+        await this.cookie.click();
+    }
+
+    async closeChatBot () {
+        //await this.switchToFrame(this.firstFrame); 
+        await this.closeButton.waitForExist();
+        await this.closeButton.click();
+        //await Browser.switchToParentFrame();
+    }  
+       
+    async switchToFrames () {
+        await this.switchToFrame(this.firstFrame);
+        await this.switchToFrame(this.secondFrame);
+    }
+     
+    async numberOfInstances (numberOfInstances) {
+        await this.instances.waitForExist();
+        await this.instances.setValue(numberOfInstances);
+    }
+
+    async operatingSystemSoftware () {
+        await this.operatingSystem.click();
+        await this.operatingSystemFree.click();
+    }
+
+    async vmClass () {
+        await this.provisioningModel.click();
+        await this.provisioningModelRegular.click();
+    }
+
+    async instanceType () {
+        await this.series.click();
+        await this.seriesN1.waitForExist();
+        await this.seriesN1.click();
+        await this.machineType.click();
+        await this.machineTypeN1St8.click();
+    }
+
+    async GPU () {
+        await this.addGPU.click();
+        await this.GPUType.click();
+        await this.GPUTypeV100.click();
+        await this.numberOfGPUs.click();
+        await this.numberOfGPUs1.click();
+    }
+
+    async localSSD () {
+        await this.localSSDField.waitForExist();
+        await this.localSSDField.click();
+        await this.localSSD2gb.click();
+    }
+
+    async datacenterLocation () {
+        await this.datacenter.click();
+        await this.frankfurt.click();
+    }
+
+    async committedUsage () {
+        await this.committedUsageField.click();
+        await this.committedUsage1year.click();
+    }
+
+    async estimate () {
+        await this.estimateBtn.click();
+    }  
+  
+}
+
+module.exports = new CalculatorPage();

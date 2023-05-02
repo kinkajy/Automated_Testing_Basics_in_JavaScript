@@ -36,9 +36,17 @@ class CalculatorPage extends Page {
     get frankfurt() {return $('md-option[value="europe-west3"][ng-repeat="item in listingCtrl.fullRegionList | filter:listingCtrl.inputRegionText.computeServer"]') };
 
     get committedUsageField() {return $('md-select[ng-model="listingCtrl.computeServer.cud"]') };
-    get committedUsage1year() {return $('md-option[value="1"][id="select_option_133"]') };
+    get committedUsage1year() {return $('md-option[value="1"][id="select_option_134"]') };
 
     get estimateBtn() {return $('button[ng-click="listingCtrl.addComputeServer(ComputeEngineForm);"]') };
+
+    //check
+    get vmClassCheck() {return $('md-list-item[ng-if="item.items.editHook && item.items.editHook.initialInputs.class"]') };
+    get instanceTypeCheck() {return $('(//md-list-item[@role="listitem"])[5]') };
+    get regionCheck() {return $('(//md-list-item[@role="listitem"])[1]') };
+    get localSSDCheck() {return $(' md-list-item[ng-if="item.items.ssd && item.items.ssd != 0"]') };
+    get comntermCheck() {return $('md-list-item[ng-if="item.items.termText && item.items.termText.length != 0"]') };
+
 
     async cookieAgree () {
         await this.cookie.waitForExist();
@@ -107,6 +115,14 @@ class CalculatorPage extends Page {
     async estimate () {
         await this.estimateBtn.click();
     }  
+
+    async dataCheck () {
+        await expect(this.vmClassCheck).toHaveTextContaining('Provisioning model: Regular');
+        await expect(this.instanceTypeCheck).toHaveTextContaining('Instance type: n1-standard-8');
+        await expect(this.regionCheck).toHaveTextContaining('Region: Frankfurt');
+        await expect(this.localSSDCheck).toHaveTextContaining('Local SSD: 2x375 GiB');
+        await expect(this.comntermCheck).toHaveTextContaining('Commitment term: 1 Year');
+    }
   
 }
 

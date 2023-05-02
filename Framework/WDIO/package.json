@@ -18,6 +18,8 @@
     "wdio-chromedriver-service": "^8.1.1"
   },
   "dependencies": {
+    "@wdio/codemod": "^0.12.0",
+    "jscodeshift": "^0.14.0",
     "mocha": "^10.2.0",
     "selenium-webdriver": "^4.8.0",
     "webdriverio": "^8.6.7"

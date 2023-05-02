@@ -20,6 +20,7 @@ describe('Cloud Computing Service', ()=>{
         await CalculatorPage.datacenterLocation();
         await CalculatorPage.committedUsage();
         await CalculatorPage.estimate();
+        await CalculatorPage.dataCheck();
         
     })
 

@@ -1,5 +1,6 @@
 const { Browser } = require('selenium-webdriver');
 const Page = require('./page.js');
+const Key = require('webdriverio');
 
 class CalculatorPage extends Page {
 
@@ -47,40 +48,45 @@ class CalculatorPage extends Page {
     get localSSDCheck() {return $(' md-list-item[ng-if="item.items.ssd && item.items.ssd != 0"]') };
     get comntermCheck() {return $('md-list-item[ng-if="item.items.termText && item.items.termText.length != 0"]') };
 
+    //email
+    get emailEstimateBtn() {return $('button[title="Email Estimate"]') };
+    get emailField() {return $('[ng-model="emailQuote.user.email"]') };
+    get emailSendBtn() {return $('[ng-disabled="emailForm.$invalid"]') };
 
-    async cookieAgree () {
+    get price() {return $('.cpc-cart-total .md-title .ng-binding') };
+
+
+    async cookieAgree() {
         await this.cookie.waitForExist();
         await this.cookie.click();
     }
 
-    async closeChatBot () {
-        //await this.switchToFrame(this.firstFrame); 
+    async closeChatBot() {
         await this.closeButton.waitForExist();
         await this.closeButton.click();
-        //await Browser.switchToParentFrame();
     }  
        
-    async switchToFrames () {
-        await this.switchToFrame(this.firstFrame);
-        await this.switchToFrame(this.secondFrame);
+    async switchToFrames() {
+        await this.waitAndSwitchToFrame(this.firstFrame);
+        await this.waitAndSwitchToFrame(this.secondFrame);
     }
      
-    async numberOfInstances (numberOfInstances) {
+    async numberOfInstances(numberOfInstances) {
         await this.instances.waitForExist();
         await this.instances.setValue(numberOfInstances);
     }
 
-    async operatingSystemSoftware () {
+    async operatingSystemSoftware() {
         await this.operatingSystem.click();
         await this.operatingSystemFree.click();
     }
 
-    async vmClass () {
+    async vmClass() {
         await this.provisioningModel.click();
         await this.provisioningModelRegular.click();
     }
 
-    async instanceType () {
+    async instanceType() {
         await this.series.click();
         await this.seriesN1.waitForExist();
         await this.seriesN1.click();
@@ -88,7 +94,7 @@ class CalculatorPage extends Page {
         await this.machineTypeN1St8.click();
     }
 
-    async GPU () {
+    async GPU() {
         await this.addGPU.click();
         await this.GPUType.click();
         await this.GPUTypeV100.click();
@@ -96,34 +102,56 @@ class CalculatorPage extends Page {
         await this.numberOfGPUs1.click();
     }
 
-    async localSSD () {
+    async localSSD() {
         await this.localSSDField.waitForExist();
         await this.localSSDField.click();
         await this.localSSD2gb.click();
     }
 
-    async datacenterLocation () {
+    async datacenterLocation() {
         await this.datacenter.click();
         await this.frankfurt.click();
     }
 
-    async committedUsage () {
+    async committedUsage() {
         await this.committedUsageField.click();
         await this.committedUsage1year.click();
     }
 
-    async estimate () {
+    async estimate() {
         await this.estimateBtn.click();
     }  
 
-    async dataCheck () {
+    //Verification of the correspondence of the data of the required fields
+    async dataCheck() {
         await expect(this.vmClassCheck).toHaveTextContaining('Provisioning model: Regular');
         await expect(this.instanceTypeCheck).toHaveTextContaining('Instance type: n1-standard-8');
         await expect(this.regionCheck).toHaveTextContaining('Region: Frankfurt');
         await expect(this.localSSDCheck).toHaveTextContaining('Local SSD: 2x375 GiB');
         await expect(this.comntermCheck).toHaveTextContaining('Commitment term: 1 Year');
     }
-  
+
+    //Sending the price of the calculated estimates
+    async sendEmail() {
+        await this.emailEstimateBtn.waitForExist();
+        await this.emailEstimateBtn.click();
+        await this.emailField.click();
+        await browser.keys(['Control', 'v']);
+        await this.emailSendBtn.click();
+    }
+
+    async switchWin() {
+        await browser.switchWindow('Temp Mail');
+    }
+
+    //Obtain the price of the estimate that has been calculated and parse it
+    async cloudPrice() {
+        const priceCloud = await this.price.getText();
+        const regex = /USD \d{1,3},\d{1,3}.\d{1,3}/;
+        const parsedPrice = priceCloud.match(regex);
+        return parsedPrice[0];
+    }
+       
 }
 
-module.exports = new CalculatorPage();
+module.exports = new CalculatorPage(); 

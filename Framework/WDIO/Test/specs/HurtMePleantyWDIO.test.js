@@ -8,6 +8,8 @@ describe('Cloud Computing Service', ()=>{
         await HomePage.open();
         await HomePage.search('Google Cloud Platform Pricing Calculator');
         await SearchPage.searchResult.click();
+        
+        //Filling in the form with the following data
         await CalculatorPage.cookieAgree();
         await CalculatorPage.closeChatBot();
         await CalculatorPage.switchToFrames();
@@ -20,6 +22,8 @@ describe('Cloud Computing Service', ()=>{
         await CalculatorPage.datacenterLocation();
         await CalculatorPage.committedUsage();
         await CalculatorPage.estimate();
+
+        //Verification of the correspondence of the data of the required fields
         await CalculatorPage.dataCheck();
         
     })

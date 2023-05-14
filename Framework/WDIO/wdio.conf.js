@@ -138,7 +138,13 @@ exports.config = {
         outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,
         disableWebdriverScreenshotsReporting: false,
-    }]],
+        },
+    ],
+    ['junit', {
+        outputDir: './report'
+        }, 
+    ],
+],
 
 
     

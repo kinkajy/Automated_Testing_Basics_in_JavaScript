@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Cloud Computing Service" timestamp="2023-05-14T14:46:03" time="60.148" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Cloud Computing Service"/>
+      <property name="capabilities" value="chrome.113_0_5672_93.windows"/>
+      <property name="file" value="file:///C:/Users/plekh/EPAM/EPAMJS/git/Automated_Testing_Basics_in_JavaScript/Framework/WDIO/Test/specs/HardcoreWDIO.test.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_93.windows.Cloud_Computing_Service" name="should open the caclculator and verify prices with email" time="60.134">
+      <failure/>
+      <error message="Timeout of 60000ms exceeded. The execution in the test &quot;Cloud Computing Service should open the caclculator and verify prices with email&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\plekh\EPAM\EPAMJS\git\Automated_Testing_Basics_in_JavaScript\Framework\WDIO\Test\specs\HardcoreWDIO.test.js)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/url - {"url":"https://cloud.google.com/"}
+RESULT: {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"input[name=q]"}
+RESULT: {"using":"css selector","value":"input[name=q]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/13CDC75EFE73B02A11676464A20B0C3C_element_47/clear - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/13CDC75EFE73B02A11676464A20B0C3C_element_47/value - {"text":"Google Cloud Platform Pricing Calculator"}
+RESULT: {"text":"Google Cloud Platform Pricing Calculator"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/62b74bca03f2d6cb9995bd04a2a121d6/actions - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"xpath","value":"(//a[contains(@class, 'gs-title')])[1]"}
+RESULT: {"using":"xpath","value":"(//a[contains(@class, 'gs-title')])[1]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/elements - {"using":"xpath","value":"(//a[contains(@class, 'gs-title')])[1]"}
+RESULT: {"using":"xpath","value":"(//a[contains(@class, 'gs-title')])[1]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/elements - {"using":"xpath","value":"(//a[contains(@class, 'gs-title')])[1]"}
+RESULT: {"using":"xpath","value":"(//a[contains(@class, 'gs-title')])[1]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/elements - {"using":"xpath","value":"(//a[contains(@class, 'gs-title')])[1]"}
+RESULT: {"using":"xpath","value":"(//a[contains(@class, 'gs-title')])[1]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"xpath","value":"(//a[contains(@class, 'gs-title')])[1]"}
+RESULT: {"using":"xpath","value":"(//a[contains(@class, 'gs-title')])[1]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/13CDC75EFE73B02A11676464A20B0C3C_element_117/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"devsite-snackbar[type=\"cookie-notification\"] button"}
+RESULT: {"using":"css selector","value":"devsite-snackbar[type=\"cookie-notification\"] button"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/elements - {"using":"css selector","value":"devsite-snackbar[type=\"cookie-notification\"] button"}
+RESULT: {"using":"css selector","value":"devsite-snackbar[type=\"cookie-notification\"] button"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"devsite-snackbar[type=\"cookie-notification\"] button"}
+RESULT: {"using":"css selector","value":"devsite-snackbar[type=\"cookie-notification\"] button"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/8A9EA73A9F0AB27AFB64C5C8EE0067B0_element_163/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"cloudx-chat"}
+RESULT: {"using":"css selector","value":"cloudx-chat"}
+COMMAND: GET /session/62b74bca03f2d6cb9995bd04a2a121d6/element/8A9EA73A9F0AB27AFB64C5C8EE0067B0_element_164/shadow - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/shadow/8A9EA73A9F0AB27AFB64C5C8EE0067B0_element_165/element - {"using":"css selector","value":"span[class=\"close\"]"}
+RESULT: {"using":"css selector","value":"span[class=\"close\"]"}
+COMMAND: GET /session/62b74bca03f2d6cb9995bd04a2a121d6/element/8A9EA73A9F0AB27AFB64C5C8EE0067B0_element_164/shadow - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/shadow/8A9EA73A9F0AB27AFB64C5C8EE0067B0_element_165/elements - {"using":"css selector","value":"span[class=\"close\"]"}
+RESULT: {"using":"css selector","value":"span[class=\"close\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"cloudx-chat"}
+RESULT: {"using":"css selector","value":"cloudx-chat"}
+COMMAND: GET /session/62b74bca03f2d6cb9995bd04a2a121d6/element/8A9EA73A9F0AB27AFB64C5C8EE0067B0_element_164/shadow - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/shadow/8A9EA73A9F0AB27AFB64C5C8EE0067B0_element_165/element - {"using":"css selector","value":"span[class=\"close\"]"}
+RESULT: {"using":"css selector","value":"span[class=\"close\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/8A9EA73A9F0AB27AFB64C5C8EE0067B0_element_138/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"iframe[name^=\"goog_\"]"}
+RESULT: {"using":"css selector","value":"iframe[name^=\"goog_\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/elements - {"using":"css selector","value":"iframe[name^=\"goog_\"]"}
+RESULT: {"using":"css selector","value":"iframe[name^=\"goog_\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"iframe[name^=\"goog_\"]"}
+RESULT: {"using":"css selector","value":"iframe[name^=\"goog_\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/frame - {"id":{"element-6066-11e4-a52e-4f735466cecf":"8A9EA73A9F0AB27AFB64C5C8EE0067B0_element_162"}}
+RESULT: {"id":{"element-6066-11e4-a52e-4f735466cecf":"8A9EA73A9F0AB27AFB64C5C8EE0067B0_element_162"}}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"#myFrame"}
+RESULT: {"using":"css selector","value":"#myFrame"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/elements - {"using":"css selector","value":"#myFrame"}
+RESULT: {"using":"css selector","value":"#myFrame"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"#myFrame"}
+RESULT: {"using":"css selector","value":"#myFrame"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/frame - {"id":{"element-6066-11e4-a52e-4f735466cecf":"71A9E13FA7D769951338E73AF5C2BCE1_element_3"}}
+RESULT: {"id":{"element-6066-11e4-a52e-4f735466cecf":"71A9E13FA7D769951338E73AF5C2BCE1_element_3"}}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"[id^=\"input_\"][ng-model=\"listingCtrl.computeServer.quantity\"]"}
+RESULT: {"using":"css selector","value":"[id^=\"input_\"][ng-model=\"listingCtrl.computeServer.quantity\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/elements - {"using":"css selector","value":"[id^=\"input_\"][ng-model=\"listingCtrl.computeServer.quantity\"]"}
+RESULT: {"using":"css selector","value":"[id^=\"input_\"][ng-model=\"listingCtrl.computeServer.quantity\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"[id^=\"input_\"][ng-model=\"listingCtrl.computeServer.quantity\"]"}
+RESULT: {"using":"css selector","value":"[id^=\"input_\"][ng-model=\"listingCtrl.computeServer.quantity\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_167/clear - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_167/value - {"text":"4"}
+RESULT: {"text":"4"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.os\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.os\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_168/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-option[value=\"free\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"free\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_169/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.class\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.class\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_170/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-option[value=\"regular\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"regular\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_171/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.series\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.series\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_172/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-option[value=\"n1\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"n1\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/elements - {"using":"css selector","value":"md-option[value=\"n1\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"n1\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-option[value=\"n1\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"n1\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_173/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.instance\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.instance\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_263/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-option[value=\"CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_264/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"xpath","value":"(//md-checkbox[@aria-label=\"Add GPUs\"]/div[@class=\"md-container md-ink-ripple\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-checkbox[@aria-label=\"Add GPUs\"]/div[@class=\"md-container md-ink-ripple\"])[1]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_265/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.gpuType\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.gpuType\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_311/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-option[value=\"NVIDIA_TESLA_V100\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"NVIDIA_TESLA_V100\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_312/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.gpuCount\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.gpuCount\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_313/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-option[value=\"1\"][ng-repeat=\"item in listingCtrl.supportedGpuNumbers[listingCtrl.computeServer.gpuType]\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"1\"][ng-repeat=\"item in listingCtrl.supportedGpuNumbers[listingCtrl.computeServer.gpuType]\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_314/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.ssd\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.ssd\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/elements - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.ssd\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.ssd\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.ssd\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.ssd\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_315/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-option[value=\"2\"][ng-repeat=\"item in listingCtrl.dynamicSsd.computeServer\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"2\"][ng-repeat=\"item in listingCtrl.dynamicSsd.computeServer\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_316/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.location\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.location\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_317/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-option[value=\"europe-west3\"][ng-repeat=\"item in listingCtrl.fullRegionList | filter:listingCtrl.inputRegionText.computeServer\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"europe-west3\"][ng-repeat=\"item in listingCtrl.fullRegionList | filter:listingCtrl.inputRegionText.computeServer\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_318/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.cud\"]"}
+RESULT: {"using":"css selector","value":"md-select[ng-model=\"listingCtrl.computeServer.cud\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_319/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"md-option[value=\"1\"][id=\"select_option_134\"]"}
+RESULT: {"using":"css selector","value":"md-option[value=\"1\"][id=\"select_option_134\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_320/click - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":"button[ng-click=\"listingCtrl.addComputeServer(ComputeEngineForm);\"]"}
+RESULT: {"using":"css selector","value":"button[ng-click=\"listingCtrl.addComputeServer(ComputeEngineForm);\"]"}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element/D6CBA4063782A74C97F6CF5C656C4757_element_70/click - {}
+COMMAND: DELETE /session/62b74bca03f2d6cb9995bd04a2a121d6 - {}
+RESULT: {}
+COMMAND: POST /session/62b74bca03f2d6cb9995bd04a2a121d6/element - {"using":"css selector","value":".cpc-cart-total .md-title .ng-binding"}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout of 60000ms exceeded. The execution in the test "Cloud Computing Service should open the caclculator and verify prices with email" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\plekh\EPAM\EPAMJS\git\Automated_Testing_Basics_in_JavaScript\Framework\WDIO\Test\specs\HardcoreWDIO.test.js)
+    at createTimeoutError (C:\Users\plekh\EPAM\EPAMJS\git\Automated_Testing_Basics_in_JavaScript\Framework\WDIO\node_modules\mocha\lib\errors.js:498:15)
+    at Test.Runnable._timeoutError (C:\Users\plekh\EPAM\EPAMJS\git\Automated_Testing_Basics_in_JavaScript\Framework\WDIO\node_modules\mocha\lib\runnable.js:431:10)
+    at Timeout.<anonymous> (C:\Users\plekh\EPAM\EPAMJS\git\Automated_Testing_Basics_in_JavaScript\Framework\WDIO\node_modules\mocha\lib\runnable.js:246:24)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

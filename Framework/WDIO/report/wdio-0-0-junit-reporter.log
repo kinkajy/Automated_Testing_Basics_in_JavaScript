@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Test suite" timestamp="2023-05-14T14:46:03" time="68.229" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Test suite"/>
+      <property name="capabilities" value="chrome.113_0_5672_93.windows"/>
+      <property name="file" value="file:///C:/Users/plekh/EPAM/EPAMJS/git/Automated_Testing_Basics_in_JavaScript/Framework/WDIO/Test/specs/ICanWin_BringItOn.test.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_93.windows.Test_suite" name="I Can Win" time="36.621">
+      <system-out><![CDATA[
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/url - {"url":"https://pastebin.com/"}
+RESULT: {"url":"https://pastebin.com/"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/elements - {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/CDD815444D677838F3DDD3146F3653C9_element_20/click - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/CDD815444D677838F3DDD3146F3653C9_element_34/clear - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/CDD815444D677838F3DDD3146F3653C9_element_34/value - {"text":"Hello from WebDriver"}
+RESULT: {"text":"Hello from WebDriver"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"//*[@id=\"select2-postform-expiration-container\"]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"select2-postform-expiration-container\"]"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/CDD815444D677838F3DDD3146F3653C9_element_36/click - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"/html/body/span[2]/span/span[2]/ul/li[3]"}
+RESULT: {"using":"xpath","value":"/html/body/span[2]/span/span[2]/ul/li[3]"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/CDD815444D677838F3DDD3146F3653C9_element_38/click - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"css selector","value":"#postform-name"}
+RESULT: {"using":"css selector","value":"#postform-name"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/CDD815444D677838F3DDD3146F3653C9_element_39/clear - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/CDD815444D677838F3DDD3146F3653C9_element_39/value - {"text":"helloweb"}
+RESULT: {"text":"helloweb"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"//*[@id=\"w0\"]/div[5]/div[1]/div[10]/button"}
+RESULT: {"using":"xpath","value":"//*[@id=\"w0\"]/div[5]/div[1]/div[10]/button"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/CDD815444D677838F3DDD3146F3653C9_element_42/click - {}
+RESULT: {}
+COMMAND: GET /session/f4a2ab44888a763ca988611f8ee7b64d/screenshot - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_93.windows.Test_suite" name="Bring It On" time="31.539">
+      <system-out><![CDATA[
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/url - {"url":"https://pastebin.com/"}
+RESULT: {}
+RESULT: {"url":"https://pastebin.com/"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/elements - {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"qc-cmp2-ui\"]/div[2]/div/button[2]"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/5A1BEE551B585F4D2738B35FE27D19FD_element_91/click - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/5A1BEE551B585F4D2738B35FE27D19FD_element_106/clear - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/5A1BEE551B585F4D2738B35FE27D19FD_element_106/value - {"text":"git config --global user.name \"New Sheriff in Town\" git reset $ (git commit-tree HEAD ^ {tree} -m \"Legacy code\" git push origin master --force"}
+RESULT: {"text":"git config --global user.name \"New Sheriff in Town\" git reset $ (git commit-tree HEAD ^ {tree} -m \"Legacy code\" git push origin master --force"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"css selector","value":"#select2-postform-format-container"}
+RESULT: {"using":"css selector","value":"#select2-postform-format-container"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/5A1BEE551B585F4D2738B35FE27D19FD_element_108/click - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"/html/body/span[2]/span/span[2]/ul/li[2]/ul/li[1]"}
+RESULT: {"using":"xpath","value":"/html/body/span[2]/span/span[2]/ul/li[2]/ul/li[1]"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/5A1BEE551B585F4D2738B35FE27D19FD_element_111/click - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"css selector","value":"#select2-postform-expiration-container"}
+RESULT: {"using":"css selector","value":"#select2-postform-expiration-container"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/5A1BEE551B585F4D2738B35FE27D19FD_element_112/click - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"/html/body/span[2]/span/span[2]/ul/li[3]"}
+RESULT: {"using":"xpath","value":"/html/body/span[2]/span/span[2]/ul/li[3]"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/5A1BEE551B585F4D2738B35FE27D19FD_element_113/click - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"css selector","value":"#postform-name"}
+RESULT: {"using":"css selector","value":"#postform-name"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/5A1BEE551B585F4D2738B35FE27D19FD_element_114/clear - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/5A1BEE551B585F4D2738B35FE27D19FD_element_114/value - {"text":"how to gain dominance among developers"}
+RESULT: {"text":"how to gain dominance among developers"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"//*[@id=\"w0\"]/div[5]/div[1]/div[10]/button"}
+RESULT: {"using":"xpath","value":"//*[@id=\"w0\"]/div[5]/div[1]/div[10]/button"}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element/5A1BEE551B585F4D2738B35FE27D19FD_element_118/click - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"css selector","value":"div[class='info-top'] h1"}
+RESULT: {"using":"css selector","value":"div[class='info-top'] h1"}
+COMMAND: GET /session/f4a2ab44888a763ca988611f8ee7b64d/element/F3612ECCEDAE675B066A9DA002861060_element_130/text - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"css selector","value":"a[href=\"/archive/bash\"]"}
+RESULT: {"using":"css selector","value":"a[href=\"/archive/bash\"]"}
+COMMAND: GET /session/f4a2ab44888a763ca988611f8ee7b64d/element/F3612ECCEDAE675B066A9DA002861060_element_133/text - {}
+RESULT: {}
+COMMAND: POST /session/f4a2ab44888a763ca988611f8ee7b64d/element - {"using":"xpath","value":"//div[@class='de1']"}
+RESULT: {"using":"xpath","value":"//div[@class='de1']"}
+COMMAND: GET /session/f4a2ab44888a763ca988611f8ee7b64d/element/F3612ECCEDAE675B066A9DA002861060_element_134/text - {}
+RESULT: {}
+COMMAND: GET /session/f4a2ab44888a763ca988611f8ee7b64d/screenshot - {}
+COMMAND: DELETE /session/f4a2ab44888a763ca988611f8ee7b64d - {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

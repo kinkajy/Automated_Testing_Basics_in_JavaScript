@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Fri May 12 12:44:53 EEST 2023","Fri May 12 12:45:29 EEST 2023","35862","","Test suite","","","","Bring It On",""
+"broken","Fri May 12 12:44:24 EEST 2023","Fri May 12 12:45:24 EEST 2023","60102","","Cloud Computing Service","","","","should open the caclculator and verify prices with email",""
+"passed","Fri May 12 12:44:24 EEST 2023","Fri May 12 12:44:53 EEST 2023","28699","","Test suite","","","","I Can Win",""
+"broken","Fri May 12 12:44:24 EEST 2023","Fri May 12 12:45:24 EEST 2023","60055","","Cloud Computing Service","","","","should open the caclculator and verify prices",""

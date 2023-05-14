@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"0c78ba654a19236fae25561e7f9f34dd","name":"Cloud Computing Service","statistic":{"failed":0,"broken":2,"skipped":0,"passed":0,"unknown":0,"total":2}},{"uid":"cfc132cfb4b3c939567a73a4e667099e","name":"Test suite","statistic":{"failed":0,"broken":1,"skipped":0,"passed":1,"unknown":0,"total":2}}]}

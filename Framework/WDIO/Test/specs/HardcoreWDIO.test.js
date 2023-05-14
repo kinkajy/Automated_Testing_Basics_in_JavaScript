@@ -6,7 +6,7 @@ const calculatorPage = require('../pages/calculator.page.js')
 
 describe('Cloud Computing Service', ()=>{
 
-    it('should open the caclculator and verify prices', async () => {
+    it('should open the caclculator and verify prices with email', async () => {
         await HomePage.open();
         await HomePage.search('Google Cloud Platform Pricing Calculator');
         

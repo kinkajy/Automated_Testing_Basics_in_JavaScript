@@ -4,7 +4,7 @@ const CalculatorPage = require('../pages/calculator.page.js')
 const TemporaryMailPage = require('../pages/temporarymail.page.js')
 const calculatorPage = require('../pages/calculator.page.js')
 
-describe('Cloud Computing Service', ()=>{
+describe('Cloud Computing Service with email', ()=>{
 
     it('should open the caclculator and verify prices with email', async () => {
         await HomePage.open();

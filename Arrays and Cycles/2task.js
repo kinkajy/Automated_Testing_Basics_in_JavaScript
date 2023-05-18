@@ -3,10 +3,6 @@ convert the array to a string and back to an array*/
 
 const carManufactures = ['Porche', 'Mazda', 'Kia', 'Honda', 'Volvo'];
 
-//const stringArray = carManufactures.toString();
-//console.log(stringArray);
-// const newArray= stringArray.split(",");
-// console.log(newArray);
 let stringArray = ""
 for (let i =0; i < carManufactures.length; i++) {
     stringArray += carManufactures[i]+", "

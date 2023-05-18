@@ -17,6 +17,5 @@ console.log(objectCar);
 which is a function and displays 
 the engine power to the console*/
 
-objectCar.enginePower = function () {console.log('170kW')};
+objectCar.enginePower = function ()  {console.log('170kW')};
 objectCar.enginePower();
-console.log(objectCar);

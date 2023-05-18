@@ -2,7 +2,7 @@
 write a function that returns the result of 
 adding the number of accepted pears and apples*/
 
-const prompt=require("prompt-sync")({sigint:true});
+const prompt = require("prompt-sync")({sigint:true});
 
 let pearsQty = prompt('Enter the quantity of pears: ');
 let applesQty = prompt('Enter the quantity of apples: ');

@@ -1,6 +1,5 @@
 //Perform explicit conversion 
 
-
 //number
 let str = "5";
 let typestr = typeof str;
